@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+@theme {
+  --color-airbnb: #ff385c;
+  --color-airbnb-dark: #d50027;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
