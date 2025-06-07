@@ -13,7 +13,24 @@ const ReservationSidebar = () => {
         </select>
       </div>
 
-      <div className="w-full mb-6 py-6 text-center text-white bg-airbnb rounded-xl">Book</div>
+      <div className="w-full mb-6 py-6 text-lg text-center text-white bg-airbnb hover:bg-airbnb-dark cursor-pointer rounded-xl">Book</div>
+    
+      <div className="mb-4 flex justify-between items-center">
+        <p>$200 * 4 nights</p>
+        <p>$800</p>
+      </div>
+
+      <div className="mb-4 flex justify-between items-center">
+        <p>DjangoBNB fee</p>
+        <p>$40</p>
+      </div>
+
+      <hr className="text-gray-300" />
+
+      <div className="mt-4 flex justify-between items-center font-bold">
+        <p>Total</p>
+        <p>$840</p>
+      </div>
     </aside>
   );
 };
