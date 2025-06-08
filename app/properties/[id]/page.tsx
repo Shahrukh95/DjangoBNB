@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ReservationSidebar from "@/app/components/Properties/ReservationSidebar.tsx";
+import ReservationSidebar from "@/app/components/Properties/ReservationSidebar";
 
 const PropertyDetailPage = () => {
   return (
