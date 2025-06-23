@@ -32,12 +32,10 @@ const Modal = ({ label, content, isOpen, close }: ModalProps) => {
   return (
     <div className="flex items-center justify-center fixed inset-0 z-50 bg-black/60">
       <div className="relative w-[90%] md:w-[80%] lg:w-[700px] my-6 mx-auto h-auto">
-        <div
-          className={`transition duration-600 h-full ${showModal ? 'translate-y-0 opacity-100 ': 'translate-y-full opacity-10'}`}
-        >
+        <div className={`transition duration-600 h-full ${showModal ? 'translate-y-0 opacity-100 ': 'translate-y-full opacity-10'}`}>
           <div className="w-full h-auto rounded-xl relative flex flex-col bg-white">
             <header className="flex items-center h-[60px] px-6 rounded-t justify-center relative border-b border-gray-300">
-              <div className="p-3 absolute right-3 hover:bg-gray-300 rounded-full cursor-pointer">
+              <div onClick={handleClose} className="p-3 absolute right-3 hover:bg-gray-300 rounded-full cursor-pointer">
                 <svg fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                   <path
                     strokeLinecap="round"
